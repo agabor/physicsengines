@@ -16,7 +16,7 @@ class Speed;
 class Distance : public Metric<'d'>
 {
 public:
-    inline Speed operator/(Time time);
+    inline Speed operator/(const Time &time);
 };
 
 const Distance mili_meter(0.001);

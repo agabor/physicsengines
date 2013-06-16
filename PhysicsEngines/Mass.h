@@ -8,7 +8,14 @@
 #ifndef MASS_H
 #define	MASS_H
 
-typedef Metric<'m'> Mass;
+class Acceleration;
+class Force;
+
+class Mass : public Metric<'m'>
+{
+public:
+    inline Force operator*(const Acceleration &acc);
+};
 
 const Mass gramm(1);
 const Mass kilo_gramm(1000);

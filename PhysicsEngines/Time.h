@@ -10,7 +10,15 @@
 
 #include "Metric.h"
 
-typedef Metric<'t'> Time;
+class Distance;
+class Speed;
+
+
+class Time : public Metric<'t'>
+{
+    public:
+        inline Distance operator*(const Speed &speed);
+};
 
 const Time sec(1);
 

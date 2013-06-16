@@ -21,5 +21,7 @@ public:
     inline Force operator*(const Mass &mass);
 };
 
+const Acceleration meter_per_sec2(meter/sec/sec);
+
 #endif	/* ACCELERARTION_H */
 
