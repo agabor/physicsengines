@@ -9,17 +9,6 @@
 #define	FORCE_H
 
 
-class Speed
-{
-public:
-    Speed(double meter, double sec)
-    {
-        this->meter = meter;
-        this->sec = sec;
-    }
-    double meter;
-    double sec;
-};
 
 class Acceleration
 {
