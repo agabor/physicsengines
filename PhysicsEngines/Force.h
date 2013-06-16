@@ -7,19 +7,14 @@
 
 #ifndef FORCE_H
 #define	FORCE_H
+#include "Metric.h"
+#include "Accelerartion.h"
+#include "Mass.h"
 
-
-
-class Acceleration
+class Force : Metric<'f'>
 {
-public:
-    Speed speed;
-    double sec;
-};
-class Force
-{
-    double mass;
-    Acceleration acc;
+    inline Acceleration operator/(const Mass &mass);
+    inline Mass operator/(const Acceleration &acc);
 };
 
 #endif	/* FORCE_H */

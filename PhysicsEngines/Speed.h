@@ -13,17 +13,14 @@
 
 class Acceleration;
 
-class Speed
+class Speed : public Metric<'v'>
 {
 public:
-    Speed(Distance dist, Time time);
-    Distance dist;
-    Time time;
-    
-    Acceleration operator/(Time time);
-    Speed operator*(double mul);
-    Distance operator*(Time time);
+    inline Acceleration operator/(Time time);
+    inline Distance operator*(Time time);
 };
 
+const Speed meter_per_sec(meter/sec);
+const Speed kilometer_per_hour(kilometer/hour);
 #endif	/* SPEED_H */
 

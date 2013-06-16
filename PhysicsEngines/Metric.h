@@ -29,6 +29,14 @@ public:
     {
         return Metric<c>(value + other.value);
     }
+    void operator+=(const Metric<c> &other)  const
+    {
+        value += other.value;
+    }
+    void operator*=(double mul)  const
+    {
+        value *= mul;
+    }
 };
 
 #endif	/* METRIC_H */
