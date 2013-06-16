@@ -15,9 +15,10 @@ class Acceleration;
 
 class Speed : public Metric<'v'>
 {
-public:
-    inline Acceleration operator/(const Time &time) const;
-    inline Distance operator*(const Time &time) const;
+    public:
+        Speed(double value) : Metric<'v'>(value){}
+        inline Acceleration operator/(const Time &time) const;
+        inline Distance operator*(const Time &time) const;
 };
 
 const Speed meter_per_sec(meter/sec);

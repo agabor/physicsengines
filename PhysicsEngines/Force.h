@@ -13,8 +13,10 @@
 
 class Force : Metric<'f'>
 {
-    inline Acceleration operator/(const Mass &mass);
-    inline Mass operator/(const Acceleration &acc);
+    public:
+        Force(double value) : Metric<'f'>(value){}
+        inline Acceleration operator/(const Mass &mass);
+        inline Mass operator/(const Acceleration &acc);
 };
 
 const Force Newton(1.0);

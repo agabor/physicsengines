@@ -19,6 +19,7 @@ class Mass;
 class Acceleration : public Metric<'a'>
 {
 public:
+    Acceleration(double value) : Metric<'a'>(value){}
     inline Speed operator*(const Time &time);
     inline Force operator*(const Mass &mass);
 };

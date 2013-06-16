@@ -4,7 +4,7 @@
 
 inline Distance Time::operator *(const Speed& speed)  const
 {
-    return Speed(value * speed.value);
+    return Distance(value * speed.value);
 }
 
 inline Time Time::operator*(double mul) const

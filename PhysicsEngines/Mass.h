@@ -8,13 +8,17 @@
 #ifndef MASS_H
 #define	MASS_H
 
+#include "Metric.h"
 class Acceleration;
 class Force;
 
 class Mass : public Metric<'m'>
 {
-public:
-    inline Force operator*(const Acceleration &acc);
+    public:
+        Mass(double value) : Metric<'m'>(value){}
+        Mass(const Mass &other) : Metric<'m'>(other){}
+        inline Force operator*(const Acceleration &acc) const;
+        inline Mass operator*(double mul) const;
 };
 
 const Mass gramm(1.0);

@@ -19,8 +19,8 @@ public:
     Distance(double value) : Metric<'d'>(value){}
     Distance(const Distance &other) : Metric<'d'>(other){}
     inline Speed operator/(const Time &time)  const;
-    inline Time operator*(double mul) const;
-    inline Time operator+(const Time &other) const;
+    inline Distance operator*(double mul) const;
+    inline Distance operator+(const Distance &other) const;
 };
 
 const Distance mili_meter(0.001);
