@@ -17,7 +17,7 @@ class Force : Metric<'f'>
     inline Mass operator/(const Acceleration &acc);
 };
 
-const Force Newton(1);
+const Force Newton(1.0);
 
 #endif	/* FORCE_H */
 

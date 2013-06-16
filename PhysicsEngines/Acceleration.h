@@ -12,7 +12,9 @@
 #include "Time.h"
 #include "Speed.h"
 
+
 class Force;
+class Mass;
 
 class Acceleration : public Metric<'a'>
 {
@@ -21,7 +23,7 @@ public:
     inline Force operator*(const Mass &mass);
 };
 
-const Acceleration meter_per_sec2(meter/sec/sec);
+const Acceleration meter_per_sec2(meter_per_sec/sec);
 
 #endif	/* ACCELERARTION_H */
 

@@ -4,11 +4,18 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Acceleration.h</itemPath>
       <itemPath>BaseTypes.h</itemPath>
       <itemPath>ClassicMassPoint.h</itemPath>
+      <itemPath>Distance.h</itemPath>
+      <itemPath>Force.h</itemPath>
+      <itemPath>Mass.h</itemPath>
       <itemPath>MassPoint.h</itemPath>
+      <itemPath>Metric.h</itemPath>
       <itemPath>NaivPhysicsSystem.h</itemPath>
       <itemPath>PhysicsSystem.h</itemPath>
+      <itemPath>Speed.h</itemPath>
+      <itemPath>Time.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -17,7 +24,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Acceleration.cpp</itemPath>
+      <itemPath>Distance.cpp</itemPath>
+      <itemPath>Force.cpp</itemPath>
+      <itemPath>Mass.cpp</itemPath>
       <itemPath>NaivPhysicsSystem.cpp</itemPath>
+      <itemPath>Speed.cpp</itemPath>
+      <itemPath>Time.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -44,17 +57,43 @@
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="Acceleration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Acceleration.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="BaseTypes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ClassicMassPoint.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Distance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Distance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Force.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Force.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mass.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="MassPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Metric.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="NaivPhysicsSystem.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NaivPhysicsSystem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PhysicsSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Speed.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Speed.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Time.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Time.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="3">
@@ -80,17 +119,43 @@
         <archiverTool>
         </archiverTool>
       </compileType>
+      <item path="Acceleration.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Acceleration.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="BaseTypes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ClassicMassPoint.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Distance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Distance.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Force.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Force.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mass.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="MassPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Metric.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="NaivPhysicsSystem.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NaivPhysicsSystem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PhysicsSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Speed.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Speed.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Time.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Time.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

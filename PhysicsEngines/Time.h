@@ -17,18 +17,22 @@ class Speed;
 class Time : public Metric<'t'>
 {
     public:
-        inline Distance operator*(const Speed &speed);
+        Time(double value) : Metric<'t'>(value){}
+        Time(const Time &other) : Metric<'t'>(other){}
+        inline Distance operator*(const Speed &speed)  const;
+        inline Time operator*(double mul) const;
+        inline Time operator+(const Time &other) const;
 };
 
-const Time sec(1);
+const Time sec(1.0);
 
-const Time minute(60);
+const Time minute(60.0);
 
-const Time hour(minute * 60);
+const Time hour(minute * 60.0);
 
-const Time day(hour * 24);
+const Time day(hour * 24.0);
 
-const Time week(day * 7);
+const Time week(day * 7.0);
 
 const Time year(day * 365.25);
 

@@ -13,22 +13,15 @@ class Metric
 {
 public:
     double value;
-    Metric(double ammount)
+    Metric(double value)
     {
-        this->value = ammount;
+        this->value = value;
     }
     Metric(const Metric<c> &other)
     {
         this->value = other.value;
     }
-    Metric<c> operator*(double mul) const
-    {
-        return Metric<c>(value * mul);
-    }
-    Metric<c> operator+(const Metric<c> &other)  const
-    {
-        return Metric<c>(value + other.value);
-    }
+
     void operator+=(const Metric<c> &other)  const
     {
         value += other.value;

@@ -16,12 +16,16 @@ class Speed;
 class Distance : public Metric<'d'>
 {
 public:
-    inline Speed operator/(const Time &time);
+    Distance(double value) : Metric<'d'>(value){}
+    Distance(const Distance &other) : Metric<'d'>(other){}
+    inline Speed operator/(const Time &time)  const;
+    inline Time operator*(double mul) const;
+    inline Time operator+(const Time &other) const;
 };
 
 const Distance mili_meter(0.001);
-const Distance meter(1);
-const Distance kilometer(1000);
+const Distance meter(1.0);
+const Distance kilometer(1000.0);
 
 #endif	/* DISTANCE_H */
 

@@ -17,9 +17,9 @@ public:
     inline Force operator*(const Acceleration &acc);
 };
 
-const Mass gramm(1);
-const Mass kilo_gramm(1000);
-const Mass tonne(kilo_gramm * 1000);
+const Mass gramm(1.0);
+const Mass kilo_gramm(1000.0);
+const Mass tonne(kilo_gramm * 1000.0);
 
 #endif	/* MASS_H */
 
