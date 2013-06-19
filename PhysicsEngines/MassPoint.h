@@ -9,7 +9,6 @@
 #define	MASSPOINT_H
 
 #include "BaseTypes.h"
-
 template<class Coordinate>
 class MassPoint
 {

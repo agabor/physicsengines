@@ -35,13 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Acceleration.o \
-	${OBJECTDIR}/Distance.o \
-	${OBJECTDIR}/Force.o \
-	${OBJECTDIR}/Mass.o \
-	${OBJECTDIR}/NaivPhysicsSystem.o \
-	${OBJECTDIR}/Speed.o \
-	${OBJECTDIR}/Time.o
+	${OBJECTDIR}/NaivPhysicsSystem.o
 
 
 # C Compiler Flags
@@ -70,40 +64,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphysicsengines.a: ${OBJECTFILES}
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphysicsengines.a ${OBJECTFILES} 
 	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libphysicsengines.a
 
-${OBJECTDIR}/Acceleration.o: Acceleration.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Acceleration.o Acceleration.cpp
-
-${OBJECTDIR}/Distance.o: Distance.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Distance.o Distance.cpp
-
-${OBJECTDIR}/Force.o: Force.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Force.o Force.cpp
-
-${OBJECTDIR}/Mass.o: Mass.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mass.o Mass.cpp
-
 ${OBJECTDIR}/NaivPhysicsSystem.o: NaivPhysicsSystem.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/NaivPhysicsSystem.o NaivPhysicsSystem.cpp
-
-${OBJECTDIR}/Speed.o: Speed.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Speed.o Speed.cpp
-
-${OBJECTDIR}/Time.o: Time.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Time.o Time.cpp
+	$(COMPILE.cc) -g -I.. -MMD -MP -MF $@.d -o ${OBJECTDIR}/NaivPhysicsSystem.o NaivPhysicsSystem.cpp
 
 # Subprojects
 .build-subprojects:
