@@ -5,17 +5,25 @@
  * Created on 2013. június 14., 20:15
  */
 
-#ifndef BASETYPES_H
-#define	BASETYPES_H
+#ifndef QQQQQQBASETYPES_H
+#define	QQQQQQBASETYPES_H
+
+#include <boost/units/systems/si/length.hpp>
+#include <boost/units/quantity.hpp>
+
+using namespace boost::units;
+using namespace boost::units::si;
+
+typedef quantity<length, double> Length;
 
 class Coordinate3D
 {
 private:
     Coordinate3D(){}
 public:
-    double x, y, z;
+    Length x, y, z;
     
-    Coordinate3D(double x, double y, double z)
+    Coordinate3D(Length x, Length y, Length z)
     {
         this->x = x;
         this->y = y;
@@ -59,10 +67,10 @@ class Coordinate2D
 private:
     Coordinate2D(){}
 public:
-    double x, y;
+    Length x, y;
     
         
-    Coordinate2D(double x, double y)
+    Coordinate2D(Length x, Length y)
     {
         this->x = x;
         this->y = y;

@@ -45,7 +45,9 @@
       <compileType>
         <ccTool>
           <incDir>
+            <pElem>..</pElem>
             <pElem>../PhysicsEngines</pElem>
+            <pElem>../boost</pElem>
           </incDir>
         </ccTool>
         <linkerTool>

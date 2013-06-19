@@ -14,7 +14,7 @@ MassPointGUI::MassPointGUI(MassPoint<Coordinate2D> &masspoint)
 
 void MassPointGUI::draw(QGraphicsScene& scene)
 {
-    qreal x = masspoint.Position().x;
-    qreal y = masspoint.Position().y;
+    qreal x = masspoint.Position().x.value();
+    qreal y = masspoint.Position().y.value();
     scene.addEllipse(x, y, 5, 5, QPen(QColor(0, 0, 255)));
 }

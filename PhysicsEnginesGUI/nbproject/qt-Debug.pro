@@ -20,5 +20,5 @@ UI_DIR =
 QMAKE_CC = gcc
 QMAKE_CXX = g++
 DEFINES += 
-INCLUDEPATH += ../PhysicsEngines 
+INCLUDEPATH += .. ../PhysicsEngines ../boost 
 LIBS += ../PhysicsEngines/dist/Debug/MinGW_Qt-Windows/libphysicsengines.a  
